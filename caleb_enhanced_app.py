@@ -366,7 +366,7 @@ elif page == "📝 Submit Feedback":
                             conn.close()
                             
                             st.session_state['show_success'] = True
-                            st.experimental_rerun()
+                            st.rerun()
                             
                         except Exception as e:
                             st.error(f"An error occurred while saving your feedback: {str(e)}")
@@ -388,7 +388,7 @@ elif page == "⚙️ Admin Panel":
                 if username == "admin" and password == "admin123":
                     st.session_state.admin_logged_in = True
                     st.success("Login successful!")
-                    st.experimental_rerun()
+                    st.rerun()
                 else:
                     st.error("Invalid username or password")
     else:
@@ -547,7 +547,7 @@ elif page == "⚙️ Admin Panel":
                             conn.commit()
                             conn.close()
                             st.session_state['show_admin_success'] = True
-                            st.experimental_rerun()
+                            st.rerun()
             else:
                 st.markdown("""
                 <div class="info-box">
