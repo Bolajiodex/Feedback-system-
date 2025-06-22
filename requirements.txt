@@ -1,0 +1,10 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: win-64
+streamlit
+pandas
+plotly
+# numpy is included as a dependency of pandas
+# matplotlib and seaborn are not directly used in the main app
+# nltk and textblob are not directly used in the main app
+# scikit-learn is not directly used in the main app
